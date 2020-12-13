@@ -32,6 +32,11 @@ namespace WindowsFormsApp1
                             .ToList();
             chartRateData.DataSource = szurtadatok;
 
+            data elsoadat = szurtadatok[0];
+            data utolsoadat = szurtadatok[szurtadatok.Count - 1];
+            labelKulonbseg.Text = (Math.Round((utolsoadat.Close - elsoadat.Open), 2, MidpointRounding.AwayFromZero)).ToString();
+            labelHanyados.Text = (Math.Round(((utolsoadat.Close * 100) / elsoadat.Open), 2, MidpointRounding.AwayFromZero)).ToString();
+
         }
 
         private void ReadData()

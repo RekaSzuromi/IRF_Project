@@ -33,6 +33,8 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartRateData = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.labelHanyados = new System.Windows.Forms.Label();
+            this.labelKulonbseg = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartRateData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,16 +58,36 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(327, 108);
+            this.dataGridView1.Location = new System.Drawing.Point(335, 108);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(289, 252);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // labelHanyados
+            // 
+            this.labelHanyados.AutoSize = true;
+            this.labelHanyados.Location = new System.Drawing.Point(475, 46);
+            this.labelHanyados.Name = "labelHanyados";
+            this.labelHanyados.Size = new System.Drawing.Size(55, 13);
+            this.labelHanyados.TabIndex = 2;
+            this.labelHanyados.Text = "Hanyados";
+            // 
+            // labelKulonbseg
+            // 
+            this.labelKulonbseg.AutoSize = true;
+            this.labelKulonbseg.Location = new System.Drawing.Point(147, 46);
+            this.labelKulonbseg.Name = "labelKulonbseg";
+            this.labelKulonbseg.Size = new System.Drawing.Size(57, 13);
+            this.labelKulonbseg.TabIndex = 3;
+            this.labelKulonbseg.Text = "Kulonbseg";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelKulonbseg);
+            this.Controls.Add(this.labelHanyados);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.chartRateData);
             this.Name = "Form1";
@@ -74,6 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartRateData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -81,6 +104,8 @@
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chartRateData;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label labelHanyados;
+        private System.Windows.Forms.Label labelKulonbseg;
     }
 }
 
