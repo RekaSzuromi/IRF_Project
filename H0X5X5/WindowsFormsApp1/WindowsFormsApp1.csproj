@@ -54,6 +54,9 @@
     <Compile Include="Entities\Division.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Entities\Substraction.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
