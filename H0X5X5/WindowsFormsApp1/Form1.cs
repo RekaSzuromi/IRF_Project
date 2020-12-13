@@ -18,6 +18,10 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+
+            dataGridView1.DataSource = Rates;
+
+            chartRateData.DataSource = Rates;
         }
 
         private void ReadData()
