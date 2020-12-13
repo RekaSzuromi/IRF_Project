@@ -21,7 +21,17 @@ namespace WindowsFormsApp1
 
             dataGridView1.DataSource = Rates;
 
-            chartRateData.DataSource = Rates;
+            //chartRateData.DataSource = Rates;
+        }
+        public void szures()
+        {
+            var szurtadatok = (from x in Rates
+                               where x.Date.Year > 2019
+                                  
+                               select x)
+                            .ToList();
+            chartRateData.DataSource = szurtadatok;
+
         }
 
         private void ReadData()
