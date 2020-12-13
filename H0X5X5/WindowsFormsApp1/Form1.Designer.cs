@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartRateData = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelHanyados = new System.Windows.Forms.Label();
@@ -48,26 +48,26 @@
             // 
             // chartRateData
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartRateData.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartRateData.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chartRateData.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartRateData.Legends.Add(legend1);
             this.chartRateData.Location = new System.Drawing.Point(12, 97);
             this.chartRateData.Name = "chartRateData";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartRateData.Series.Add(series2);
-            this.chartRateData.Size = new System.Drawing.Size(300, 263);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartRateData.Series.Add(series1);
+            this.chartRateData.Size = new System.Drawing.Size(352, 263);
             this.chartRateData.TabIndex = 0;
             this.chartRateData.Text = "chart1";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(335, 97);
+            this.dataGridView1.Location = new System.Drawing.Point(370, 97);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(289, 263);
+            this.dataGridView1.Size = new System.Drawing.Size(418, 263);
             this.dataGridView1.TabIndex = 1;
             // 
             // labelHanyados
@@ -76,7 +76,7 @@
             this.labelHanyados.BackColor = System.Drawing.SystemColors.Info;
             this.labelHanyados.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHanyados.ForeColor = System.Drawing.Color.Green;
-            this.labelHanyados.Location = new System.Drawing.Point(105, 48);
+            this.labelHanyados.Location = new System.Drawing.Point(116, 48);
             this.labelHanyados.Name = "labelHanyados";
             this.labelHanyados.Size = new System.Drawing.Size(101, 25);
             this.labelHanyados.TabIndex = 2;
@@ -88,7 +88,7 @@
             this.labelKulonbseg.BackColor = System.Drawing.SystemColors.Info;
             this.labelKulonbseg.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKulonbseg.ForeColor = System.Drawing.Color.Green;
-            this.labelKulonbseg.Location = new System.Drawing.Point(457, 48);
+            this.labelKulonbseg.Location = new System.Drawing.Point(476, 48);
             this.labelKulonbseg.Name = "labelKulonbseg";
             this.labelKulonbseg.Size = new System.Drawing.Size(107, 25);
             this.labelKulonbseg.TabIndex = 3;
@@ -107,6 +107,7 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.Honeydew;
             this.listBox1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 21;
@@ -132,7 +133,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(93, 23);
+            this.label2.Location = new System.Drawing.Point(116, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(231, 15);
             this.label2.TabIndex = 7;
@@ -142,7 +143,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(447, 23);
+            this.label3.Location = new System.Drawing.Point(478, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(204, 15);
             this.label3.TabIndex = 8;
@@ -152,7 +153,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(198, 48);
+            this.label4.Location = new System.Drawing.Point(214, 48);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 25);
             this.label4.TabIndex = 9;
@@ -162,7 +163,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(538, 48);
+            this.label5.Location = new System.Drawing.Point(568, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 25);
             this.label5.TabIndex = 10;
@@ -187,6 +188,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint_1);
             ((System.ComponentModel.ISupportInitialize)(this.chartRateData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
