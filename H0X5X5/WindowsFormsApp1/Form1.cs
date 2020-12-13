@@ -23,12 +23,23 @@ namespace WindowsFormsApp1
             dataGridView1.DataSource = Rates;
 
             //chartRateData.DataSource = Rates;
+
+            IList<int> honapList = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+            listBox1.DataSource = honapList;
+
+            DataOnChart();
+
+            ReadData();
+
+            szures();
+
+            
         }
         public void szures()
         {
             var szurtadatok = (from x in Rates
                                where x.Date.Year > 2019
-                                  
+                                  && x.Date.Month > Convert.ToInt32(listBox1.SelectedItem)
                                select x)
                             .ToList();
             chartRateData.DataSource = szurtadatok;
@@ -103,6 +114,12 @@ namespace WindowsFormsApp1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            szures();
+            chartRateData.DataBind();
         }
     }
 }
