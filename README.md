@@ -6,3 +6,8 @@ Funkciók:
  - DataGridView táblázat, hogy a Kereskedések darabszáma, napi max és min árfolyamok is vizsgálhatóak legyenek
  - Két értékszámítási funkció
  - Interaktív, szűrhető alkalmazás
+ 
+Kiegészítés:
+ - Az értékszámítási funkciók műveleti jelei a graphics osztály összetett jelei
+ - A műveleti jelek őse egy absztrakt osztály
+ - Az interakciós szűrhetőség 2020 hónapjaira szűr
