@@ -88,6 +88,16 @@ namespace WindowsFormsApp1
         }
 
 
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            Entities.Division div = new Entities.Division();
+            div.DrawImage(g);
+            Entities.Substraction ext = new Entities.Substraction();
+            ext.DrawImage(g);
+        }
+
+
 
 
         private void Form1_Load(object sender, EventArgs e)
