@@ -15,6 +15,9 @@ namespace WindowsFormsApp1.Abstractions
             AutoSize = false;
             Width = 20;
             Height = 20;
+            BackColor = Color.Green;
+            
+
 
         }
 

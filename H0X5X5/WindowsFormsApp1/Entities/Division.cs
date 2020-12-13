@@ -18,14 +18,14 @@ namespace WindowsFormsApp1.Entities
             int y1 = 5;
 
             // Fill ellipse on screen.
-            g.FillEllipse(new SolidBrush(Color.Green), x1, y1, Width, Height);
+            g.FillEllipse(new SolidBrush(BackColor), x1, y1, Width, Height);
 
             //RECTANGLE
             // Create rectangle.
             Rectangle rect = new Rectangle(20, 30, 60, 15);
 
             // Draw rectangle to screen.
-            g.FillRectangle((new SolidBrush(Color.Green)), rect);
+            g.FillRectangle((new SolidBrush(BackColor)), rect);
 
             //ELLIPSE2
             // Create location and size of ellipse.
@@ -33,7 +33,7 @@ namespace WindowsFormsApp1.Entities
             int y2 = 50;
 
             // Fill ellipse on screen.
-            g.FillEllipse(new SolidBrush(Color.Green), x2, y2, Width, Height);
+            g.FillEllipse(new SolidBrush(BackColor), x2, y2, Width, Height);
 
         }
     }

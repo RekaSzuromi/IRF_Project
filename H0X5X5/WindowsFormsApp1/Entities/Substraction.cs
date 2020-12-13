@@ -17,7 +17,7 @@ namespace WindowsFormsApp1.Entities
             Rectangle rect = new Rectangle(400, 30, 60, 15);
 
             // Draw rectangle to screen.
-            g.FillRectangle((new SolidBrush(Color.Green)), rect);
+            g.FillRectangle((new SolidBrush(BackColor)), rect);
         }
     }
 }
