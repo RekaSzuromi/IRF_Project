@@ -121,5 +121,10 @@ namespace WindowsFormsApp1
             szures();
             chartRateData.DataBind();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
