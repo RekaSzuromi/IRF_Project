@@ -1,0 +1,14 @@
+A Minta magyarázata és használatának indoklása
+
+A minta során egy absztrakt osztályt használtam fel arra, hogy az osztály tulajdonságait örökölhessék az ebből származtatott osztályok.
+Az absztrakt osztályom az Operations, ami segítségével két műveleti jel kirajzolását valósítottam meg.
+Az operations osztály létrehozásával egyetlen célom az volt, hogy ősosztályként szolgáljon a műveleti jeleknek. Minimalizáltam a kódok újraírását.
+Ezzel egy olyan típusú kapcsolat jött létre az Operations osztály és a különböző műveleti jelek között, amelyben a leszármazott (Substraction és Division) az ősük (Operations)
+minden tulajdonságával és metódusával rendelkeznek. A műveleti jelek felülírhatják az ősosztálytól kapott metódusokat, és természetesen saját maguk is definiálhatnak újakat.
+Az osztás és a kivonés örökölte a szülőosztályban definiált BackColor és a BorderStyle tulajdonságot, illetve felülírják a DrawImage metódust.
+Az osztáson belül egyes részek a Width és a Height tulajdonságot is örökölték.
+A DrawImage függvény minden osztályban eltér, mivel minden műveleti jelnek más a felépítése. 
+Ezért nem volt értelme absztrakt osztályban megírnom a működését, ezért a függvényt is absztraktá tettem és a műveleti jeleknél felülrtam.
+A minta teljesem használható, mivel a műveleti jeleket egy őstől származtatja le, így közös tulajdonságaikat nem kell minden osztálynál külön definiálni. 
+Örökölt tulajdonságaik megegyeznek, mégis elég szabadségot adnak a  szerkezetek és kirajzolások átrendezésére. 
+A későbbiekben több tulajdonsággal is tovább lehet fejleszteni, ha csak vonalakból rajzoljuk ki a műveleti jeleket (ezt most azért nem tettem, mert akkor a legkomplexebb jel is csak 2 elemből állna).
