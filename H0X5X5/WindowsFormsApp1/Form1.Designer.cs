@@ -126,7 +126,7 @@
             this.buttonAlkalmaz.TabIndex = 6;
             this.buttonAlkalmaz.Text = "Alkalmaz";
             this.buttonAlkalmaz.UseVisualStyleBackColor = false;
-            this.buttonAlkalmaz.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAlkalmaz.Click += new System.EventHandler(this.buttonAlkalmaz_Click);
             // 
             // label2
             // 
