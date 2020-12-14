@@ -17,7 +17,7 @@ namespace WindowsFormsApp1.Entities
             int x1 = 40;
             int y1 = 5;
 
-            // Fill ellipse on screen.
+            // Fill  first ellipse on screen.
             g.FillEllipse(new SolidBrush(BackColor), x1, y1, Width, Height);
 
             //RECTANGLE
@@ -32,7 +32,7 @@ namespace WindowsFormsApp1.Entities
             int x2 = 40;
             int y2 = 50;
 
-            // Fill ellipse on screen.
+            // Fill second ellipse on screen.
             g.FillEllipse(new SolidBrush(BackColor), x2, y2, Width, Height);
 
         }
