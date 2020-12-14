@@ -16,7 +16,8 @@ namespace WindowsFormsApp1.Abstractions
             Width = 20;
             Height = 20;
             BackColor = Color.Green;
-            
+            BorderStyle = BorderStyle.Fixed3D;
+
 
 
         }
@@ -27,5 +28,7 @@ namespace WindowsFormsApp1.Abstractions
         }
 
         public abstract void DrawImage(Graphics g);
+
+       
     }
 }

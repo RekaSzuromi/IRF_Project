@@ -27,6 +27,7 @@ namespace WindowsFormsApp1
             IList<int> honapList = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
             listBox1.DataSource = honapList;
 
+
             DataOnChart();
 
             ReadData();
@@ -35,10 +36,12 @@ namespace WindowsFormsApp1
 
             
         }
+        
+
         public void szures()
         {
             var szurtadatok = (from x in Rates
-                               where x.Date.Year > 2019
+                               where x.Date.Year == 2020
                                   && x.Date.Month > Convert.ToInt32(listBox1.SelectedItem)
                                select x)
                             .ToList();
